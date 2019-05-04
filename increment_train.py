@@ -88,7 +88,11 @@ def main():
         args.train_set_csv = '/data/jiaxin/zili/data/cifar100/increase_train.csv'
         args.check_path = '/data/jiaxin/zili/checkpoints3'
         args.preserved_sample = '/data/jiaxin/zili/checkpoints/2019-03-28 17:15:19.936335/epoch58'
-
+    if args.server == 15:
+        args.train_set = '/home/zili/code/triplet/data/cifar100/train2'
+        args.test_set = '/home/zili/code/triplet/data/cifar100/test2'
+        args.train_set_csv = '/home/zili/code/triplet/data/cifar100/train.csv'
+        args.check_path = '/home/zili/code/triplet/checkpoints'
     now_time = str(datetime.datetime.now())
     args.check_path = os.path.join(args.check_path, now_time)
 
