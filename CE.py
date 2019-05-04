@@ -57,7 +57,7 @@ def main():
     log_path = args.check_path + os.path.sep + sys_time + 'CE.txt'
     log_file = open(log_path, 'w+')
 
-    print('Loading model...')
+    print('Loading model......')
 
     # model = torch.load(log_path)
     embedding_net = EmbeddingNet()
